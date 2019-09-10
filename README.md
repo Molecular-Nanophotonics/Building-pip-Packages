@@ -1,15 +1,6 @@
-# Building pip Packages
+# Python pip Packages
 
-This tutorial shows how to create a Python pip package. It will show you how to add the necessary files and structure to create the package, how to build the package, and how to upload it to the Python Package Index (https://pypi.org).
-
-If you want to make your package publicly accessible you can upload it on PyPi. So, first of all, register yourself on PyPi: https://pypi.org/account/register/.
-
-You might use the Molecular Nanophotonics accout: <br>
-
-*Username:* `molecular-nanophotonics` <br>
-*Password:* `default password + mona`
-
-I assume that you upload your package code on the groups GitHub account. The README.md from the GitHub repository will be directly used  as documentation of your package. 
+This tutorial shows how to build a Python pip package and how to upload it to the Python Package Index (https://pypi.org).
 
 ## Install Required Tools
 
@@ -21,19 +12,21 @@ python -m pip install --user --upgrade twine
 
 ## Setup your Project
 
-### 
-
-You will now create a handful of files to package up this project and prepare it for distribution. Create the new files listed below - you will add content to them in the following steps.
+For distribution your project need to be strucutred as follows: 
 
 ```
-MyExample/
+MyPackage/
   mypackage/
     __init__.py
-    myexample.py
+    mypackage.py
   setup.py
   LICENSE
   README.md
 ```
+
+The content of each file will be discussed in the following steps.
+
+## Creating setup.py
 
 Create a setup file setup.py in your package. This file will contain all your package metadata information. 
 
@@ -44,14 +37,14 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setuptools.setup(
-    name="myexample",
+    name="mypackage",
     version="0.0.1",
     author="Author Name",
     author_email="author@example.de",
-    description="Discription of my Package",
+    description="Discription of my package",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/molecular-nanophotonics/myexample",
+    url="https://github.com/molecular-nanophotonics/mypackage",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -60,6 +53,45 @@ setuptools.setup(
     ],
 )
 ```
+
+## Creating REDME.md
+
+Create a README.md and enter, e.g.:
+
+```
+# Example Package
+
+This is a simple example package. tion.
+```
+
+We recommend that you upload your package code on the [Molecular Nanophotonics](https://github.com/molecular-nanophotonics) Github repository. The README.md from the GitHub repository will then be directly used as documentation of your package. 
+
+## Creating a LICENSE
+
+It’s important for every package uploaded to the Python Package Index to include a license. For example, if you had chosen the MIT license, open the LICENSE file and enter the license text:
+´´´
+Copyright (c) 2018 The Python Packaging Authority
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+´´´
+
+## Generating Distribution Packages
 
 The next step is to generate distribution packages for the package. These are archives that are uploaded to the Package Index and can be installed by pip.
 
@@ -76,6 +108,14 @@ dist/
 ```
 
 ## Uploading the Distribution Packages
+
+The first thing we’ll need is an account on PyPI. Test PyPI is a separate instance of the package index intended for testing and experimentation. 
+If you want to make your package publicly accessible you can upload it on PyPi. So, first of all, register yourself on PyPi: https://pypi.org/account/register/.
+
+You might use the Molecular Nanophotonics accout: <br>
+
+Username: `molecular-nanophotonics` <br>
+Password: `default password + mona`
 
 Run Twine to upload all of the archives under `dist`:
 ```
