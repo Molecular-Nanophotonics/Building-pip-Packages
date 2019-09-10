@@ -1,6 +1,6 @@
 # Python pip Packages
 
-This tutorial shows how to build a Python pip package and how to upload it to the Python Package Index (https://pypi.org).
+This tutorial shows how to build a Python pip package and how to upload it to the Python Package Index, e.g., https://pypi.org.
 
 ## Install Required Tools
 
