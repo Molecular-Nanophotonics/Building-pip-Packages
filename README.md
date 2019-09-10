@@ -123,12 +123,12 @@ You will be prompted for the username and password you registered with PyPI. Aft
 Enter your username: molecular-nanophotonics
 Enter your password:
 Uploading distributions to https://upload.pypi.org/legacy/
-Uploading myexample-0.0.1-py3-none-any.whl
+Uploading mypackage-0.0.1-py3-none-any.whl
 100%|█████████████████████████████████████| 
-Uploading myexample-0.0.1.tar.gz
+Uploading mypackage-0.0.1.tar.gz
 100%|█████████████████████████████████████| 
 
 View at:
-https://pypi.org/project/pmyexample/0.0.1/
+https://pypi.org/project/mypackage/0.0.1/
 ```
 
