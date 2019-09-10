@@ -111,8 +111,7 @@ dist/
 
 If you want to make your package publicly accessible you need to upload it on PyPI. The credentials for the Molecular Nanophotonics PyPI account are: <br>
 
-Username: `molecular-nanophotonics` <br>
-Password: `mona password + "mona"`
+Username: `molecular-nanophotonics`, Password: `mona password + "mona"`
 
 Run `twine` to upload all of the archives under `dist`:
 ```
