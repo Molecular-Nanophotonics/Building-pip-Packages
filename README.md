@@ -97,7 +97,7 @@ The next step is to generate distribution packages for the package. These are ar
 
 Run the following command from the same directory where setup.py is located:
 
-```python3 setup.py sdist bdist_wheel```
+```python setup.py sdist bdist_wheel```
 
 This command should generate two files in the dist directory:
 
@@ -132,4 +132,4 @@ View at:
 https://pypi.org/project/mypackage/0.0.1/
 ```
 
-You can now use `pip` to install your package and verify that it works. 
+You can now use `pip install mypackage` to install your package and verify that it works. 
