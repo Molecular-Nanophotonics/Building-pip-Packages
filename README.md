@@ -64,7 +64,7 @@ Create `README.md` and enter, e.g.:
 This is a simple example package. 
 ```
 
-It si recommended that you upload your package code on the groups [Github](https://github.com/molecular-nanophotonics) repository. The README.md from the GitHub repository will then be directly used as documentation of your package. 
+It is recommended that you upload your package code on the groups [Github](https://github.com/molecular-nanophotonics) repository. The README.md from the GitHub repository will then be directly used as documentation of your package. 
 
 ## Creating a LICENSE
 
