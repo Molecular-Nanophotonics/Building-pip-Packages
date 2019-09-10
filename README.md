@@ -64,7 +64,7 @@ Create `README.md` and enter, e.g.:
 This is a simple example package. 
 ```
 
-We recommend that you upload your package code on the [Molecular Nanophotonics Github Repository](https://github.com/molecular-nanophotonics). The README.md from the GitHub repository will then be directly used as documentation of your package. 
+It si recommended that you upload your package code on the groups [Github](https://github.com/molecular-nanophotonics) repository. The README.md from the GitHub repository will then be directly used as documentation of your package. 
 
 ## Creating a LICENSE
 
@@ -109,7 +109,7 @@ dist/
 
 ## Uploading the Distribution Packages
 
-If you want to make your package publicly accessible you need to upload it on PyPI. The credentials for the Molecular Nanophotonics account are: <br>
+If you want to make your package publicly accessible you need to upload it on PyPI. The credentials for the Molecular Nanophotonics PyPI account are: <br>
 
 Username: `molecular-nanophotonics` <br>
 Password: `default password + mona`
@@ -132,3 +132,4 @@ View at:
 https://pypi.org/project/mypackage/0.0.1/
 ```
 
+You can use `pip` to install your package and verify that it works. 
