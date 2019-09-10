@@ -114,7 +114,7 @@ If you want to make your package publicly accessible you need to upload it on Py
 Username: `molecular-nanophotonics` <br>
 Password: `mona password + "mona"`
 
-Run Twine to upload all of the archives under `dist`:
+Run `twine` to upload all of the archives under `dist`:
 ```
 python -m twine upload dist/*
 ```
