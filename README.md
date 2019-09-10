@@ -132,4 +132,4 @@ View at:
 https://pypi.org/project/mypackage/0.0.1/
 ```
 
-You can use `pip` to install your package and verify that it works. 
+You can now use `pip` to install your package and verify that it works. 
