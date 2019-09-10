@@ -12,7 +12,7 @@ python -m pip install --user --upgrade twine
 
 ## Setup your Project
 
-For distribution your project need to be strucutred as follows: 
+For distribution your project need to be structured as follows: 
 
 ```
 MyPackage/
@@ -28,7 +28,7 @@ The content of each file will be discussed in the following steps.
 
 ## Creating setup.py
 
-Create a setup file setup.py in your package. This file will contain all your package metadata information. 
+Create a setup file `setup.py` in your package. This file will contain all your package metadata information. 
 
 ```
 import setuptools
@@ -54,21 +54,21 @@ setuptools.setup(
 )
 ```
 
-## Creating REDME.md
+## Creating README.md
 
-Create a README.md and enter, e.g.:
+Create `README.md` and enter, e.g.:
 
 ```
 # Example Package
 
-This is a simple example package. tion.
+This is a simple example package. 
 ```
 
-We recommend that you upload your package code on the [Molecular Nanophotonics](https://github.com/molecular-nanophotonics) Github repository. The README.md from the GitHub repository will then be directly used as documentation of your package. 
+We recommend that you upload your package code on the [Molecular Nanophotonics Github Repository](https://github.com/molecular-nanophotonics). The README.md from the GitHub repository will then be directly used as documentation of your package. 
 
 ## Creating a LICENSE
 
-It’s important for every package uploaded to the Python Package Index to include a license. For example, if you had chosen the MIT license, open the LICENSE file and enter the license text:
+It’s important for every package uploaded to the Python Package Index to include a license. For example, if you had chosen the MIT license, open the `LICENSE` file and enter the license text:
 ´´´
 Copyright (c) 2018 The Python Packaging Authority
 
@@ -109,10 +109,7 @@ dist/
 
 ## Uploading the Distribution Packages
 
-The first thing we’ll need is an account on PyPI. Test PyPI is a separate instance of the package index intended for testing and experimentation. 
-If you want to make your package publicly accessible you can upload it on PyPi. So, first of all, register yourself on PyPi: https://pypi.org/account/register/.
-
-You might use the Molecular Nanophotonics accout: <br>
+If you want to make your package publicly accessible you need to upload it on PyPI. The credentials for the Molecular Nanophotonics account are: <br>
 
 Username: `molecular-nanophotonics` <br>
 Password: `default password + mona`
@@ -121,7 +118,6 @@ Run Twine to upload all of the archives under `dist`:
 ```
 python -m twine upload dist/*
 ```
-
 You will be prompted for the username and password you registered with PyPI. After the command completes, you should see output similar to this:
 ```
 Enter your username: molecular-nanophotonics
