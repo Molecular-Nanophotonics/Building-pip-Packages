@@ -69,7 +69,7 @@ It si recommended that you upload your package code on the groups [Github](https
 ## Creating a LICENSE
 
 It’s important for every package uploaded to the Python Package Index to include a license. For example, if you had chosen the MIT license, open the `LICENSE` file and enter the license text:
-´´´
+```
 Copyright (c) 2018 The Python Packaging Authority
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -89,7 +89,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-´´´
+```
 
 ## Generating Distribution Packages
 
