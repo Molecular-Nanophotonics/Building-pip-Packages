@@ -6,8 +6,8 @@ If you want to make your package publicly accessible you can upload it on PyPi. 
 
 You might use the Molecular Nanophotonics accout: <br>
 
-Username: molecular-nanophotonics
-Password: default password + mona
+*Username:* `molecular-nanophotonics` <br>
+*Password:* `default password + mona`
 
 I assume that you upload your package code on the groups GitHub account. The README.md from the GitHub repository will be directly used  as documentation of your package. 
 
@@ -35,7 +35,6 @@ MyExample/
   README.md
 ```
 
-
 Create a setup file setup.py in your package. This file will contain all your package metadata information. 
 
 ```
@@ -60,9 +59,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
 )
-
 ```
-
 
 The next step is to generate distribution packages for the package. These are archives that are uploaded to the Package Index and can be installed by pip.
 
@@ -98,3 +95,4 @@ Uploading myexample-0.0.1.tar.gz
 View at:
 https://pypi.org/project/pmyexample/0.0.1/
 ```
+
