@@ -31,6 +31,23 @@ Create Makefile? (y/n) [y]: y
 Create Windows command file? (y/n) [y]: y
 ```
 
+After running `sphinx-quickstart` your project should look something like this:
+```
+MyPackage/
+   doc/
+      Makefile
+      _build/
+      _static/
+      _templates/
+      conf.py
+      index.rst
+      make.bat
+   setup.py
+   mypackage/
+      __init__.py
+      mypackage.py
+```
+
 Add:
 ```
 .. automodule:: mypackage
