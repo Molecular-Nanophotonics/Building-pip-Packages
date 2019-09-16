@@ -1,6 +1,6 @@
 # Sphinx Documentation
 
-Sphinx is an Python package for automated documentation: [Example Documentation](http://molecular-nanophotonics.github.io/pqreader) <br>
+Sphinx is an Python package for automated documentation. Click [here](http://molecular-nanophotonics.github.io/pqreader) to view an example. <br>
 
 To use Sphinx, install `sphinx` using `pip`:
 
@@ -53,12 +53,12 @@ MyPackage/
       mypackage.py
 ```
 
-Add:
+In the  `index.rst` file, add:
 ```
 .. automodule:: mypackage
     :members:
 ```
-to the `index.rst` file:
+`index.rst`:
 ```
 .. mypackage documentation master file, created by
    sphinx-quickstart on ...
