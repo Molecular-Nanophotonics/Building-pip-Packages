@@ -1,6 +1,6 @@
-# Sphinx Documentation
+# Sphinx Documentation Generator
 
-Sphinx is an Python package for automated documentation. Click [here](http://molecular-nanophotonics.github.io/pqreader) to view an example. <br>
+Sphinx is an Python package for automated documentation generation. Click [here](http://molecular-nanophotonics.github.io/pqreader) to view an example. <br>
 
 ## Getting Started
 
