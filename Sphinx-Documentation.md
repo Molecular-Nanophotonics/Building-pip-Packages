@@ -1,4 +1,4 @@
-# Sphinx
+# Sphinx Documentation
 
 Sphinx is an Python package for automated documentation, such as: 
 
