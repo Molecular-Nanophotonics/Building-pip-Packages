@@ -3,12 +3,21 @@
 Sphinx is an Python package for automated documentation. Click [here](http://molecular-nanophotonics.github.io/pqreader) to view an example. <br>
 
 ## Getting Started
-To use Sphinx, install `sphinx` using `pip`:
 
+First, install `sphinx` using `pip`:
 ```
 pip install sphinx
 ```
-In your project directory, create a folder named, e.g., `docs`. Then enter the `docs` folder and ecxecute:
+Prepare your project directory as follows:
+```
+MyPackage/
+   docs/
+   setup.py
+   mypackage/
+      __init__.py
+      mypackage.py
+```
+Enter the `docs` folder and ecxecute:
 ```
 sphinx-quickstart
 ```
@@ -37,7 +46,7 @@ Create Makefile? (y/n) [y]: y
 Create Windows command file? (y/n) [y]: y
 ```
 
-After running `sphinx-quickstart` your project should look something like this:
+After running `sphinx-quickstart` your project directory should look something like this:
 ```
 MyPackage/
    doc/
@@ -59,7 +68,7 @@ In the  `index.rst` file, add:
 .. automodule:: mypackage
     :members:
 ```
-Your `index.rst` should look something like:
+so your `index.rst` looks something like:
 ```
 .. mypackage documentation master file, created by
    sphinx-quickstart on ...
@@ -84,7 +93,7 @@ Indices and tables
 * :ref:`search`
 ```
 
-In `mypackage.py` you have to format your documentations as follows:
+For `autodoc` to recognize your documentation, your annoations in `mypackage.py` have to be formated follows:
 ```python
 def my_function(arg1, arg2, arg3):
     """
@@ -102,11 +111,11 @@ def my_function(arg1, arg2, arg3):
     return ret1, ret2
 ```
 
-Finally, to build the documentation run:
+Finally, to build your documentation run:
 ```
 make html
 ```
-Your documentation can now be viewed opening `_build/html/index.html`
+You should now be able to view your documentation by opening: `_build/html/index.html`
 
 ## Styling
 
