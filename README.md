@@ -2,5 +2,5 @@
 
 Readmes regarding Python programming:
 
-- [Sphinx](Sphinx-Documentation.md)
-- [Python Package Index](Python-Package-Index.md)
+- [Sphinx-Documentation.md](Sphinx-Documentation.md)
+- [Python-Package-Index.md](Python-Package-Index.md)
