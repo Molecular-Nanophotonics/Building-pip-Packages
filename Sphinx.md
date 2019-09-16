@@ -1,3 +1,7 @@
+# Sphinx
+
+Sphinx is an Python package for automated documentation.
+
 ```
 pip install sphinx
 ```
