@@ -1,4 +1,4 @@
-# Python pip Packages
+# Upload Python Package to the Python Package Index
 
 This tutorial shows how to build a Python pip package and how to upload it to the Python Package Index, e.g., https://pypi.org.
 
