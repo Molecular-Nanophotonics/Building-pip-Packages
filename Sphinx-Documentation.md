@@ -83,7 +83,24 @@ Indices and tables
 * :ref:`search`
 ```
 
-To use the [Read the Docs Sphinx Theme][https://github.com/readthedocs/sphinx_rtd_theme] install the package with `pip`:
+```python
+def my_function(arg1, arg2, arg3):
+    """
+    The discription ...
+    
+    Arguments:
+        arg1: ... \n
+	arg2: ... \n
+	arg3: ...
+    Returns:
+        ret1: ... \n
+        ret2: ...
+    """
+    
+    return ret1, ret2
+```
+
+To use the [Read the Docs Sphinx Theme](https://github.com/readthedocs/sphinx_rtd_theme) install the package with `pip`:
 ```
 pip install sphinx-rtd-theme
 ```
@@ -98,3 +115,4 @@ extensions = [
 
 html_theme = 'sphinx_rtd_theme'
 ```
+
