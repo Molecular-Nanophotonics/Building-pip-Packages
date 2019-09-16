@@ -93,7 +93,7 @@ Indices and tables
 * :ref:`search`
 ```
 
-In the `conf.py` file uncomment and change the path as follows:
+In the `conf.py` file setup the path as follows:
 
 ```
 import os
