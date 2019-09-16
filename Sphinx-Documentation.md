@@ -93,7 +93,15 @@ Indices and tables
 * :ref:`search`
 ```
 
-For `autodoc` to recognize your documentation, your annoations in `mypackage.py` have to be formated follows:
+In the `conf.py` file uncomment and change the path as follows:
+
+```
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../mypackage/'))
+```
+
+For `Sphinx` to recognize your documentation, your annoations in `mypackage.py` have to be formated follows:
 ```python
 def my_function(arg1, arg2, arg3):
     """
