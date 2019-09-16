@@ -11,7 +11,7 @@ In your project directory, create a folder named, e.g., `docs`. Then enter the `
 ```
 sphinx-quickstart
 ```
-Answer the questions as follows:
+You will be promted to answer some questions:
 ```
 Separate source and build directories (y/n) [n]:
 Name prefix for templates and static dir [_]:
