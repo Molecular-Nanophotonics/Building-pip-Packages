@@ -2,6 +2,7 @@
 
 Sphinx is an Python package for automated documentation. Click [here](http://molecular-nanophotonics.github.io/pqreader) to view an example. <br>
 
+## Getting Started
 To use Sphinx, install `sphinx` using `pip`:
 
 ```
@@ -83,6 +84,7 @@ Indices and tables
 * :ref:`search`
 ```
 
+In `mypackage.py` you have to format your documentations as follows:
 ```python
 def my_function(arg1, arg2, arg3):
     """
@@ -99,6 +101,14 @@ def my_function(arg1, arg2, arg3):
     
     return ret1, ret2
 ```
+
+Finally, to build the documentation run:
+```
+make html
+```
+Your documentation can now be viewed opening `_build/html/index.html`
+
+## Styling
 
 To use the [Read the Docs Sphinx Theme](https://github.com/readthedocs/sphinx_rtd_theme) install the package with `pip`:
 ```
