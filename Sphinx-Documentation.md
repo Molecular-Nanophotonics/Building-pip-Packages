@@ -58,7 +58,7 @@ In the  `index.rst` file, add:
 .. automodule:: mypackage
     :members:
 ```
-`index.rst`:
+Your `index.rst` should look something like:
 ```
 .. mypackage documentation master file, created by
    sphinx-quickstart on ...
@@ -83,7 +83,7 @@ Indices and tables
 * :ref:`search`
 ```
 
-To use the [Read the Docs][https://github.com/readthedocs/sphinx_rtd_theme] Sphinx Theme install the package with `pip`:
+To use the [Read the Docs Sphinx Theme][https://github.com/readthedocs/sphinx_rtd_theme] install the package with `pip`:
 ```
 pip install sphinx-rtd-theme
 ```
